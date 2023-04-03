@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./nav.css">
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="./services.css">
+    <link rel="stylesheet" href="./about.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./Images/favicon-removebg-preview.png" style="height:60px;width:60px">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+  <title>LivSmart</title>
+</head>
+<body>
+    <section id="contact">
+        <div class="nav" style="display: flex;" data-aos="zoom-in" data-aos-delay="500">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header" style="width: 40%;">
+              <div class="nav-title" style="display: flex;">
+                <img src="./Images/favicon-removebg-preview.png" alt=""
+                  style="width: 80px; height: 80px; transform: translateY(-25px);">
+                Liv-Smart
+              </div>
+            </div>
+            <div class="nav-btn">
+              <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
+    
+            <div class="nav-links" style="width: 60%;">
+              <a href="./index.html">Home</a>
+              <a href="./about.html">About Us</a>
+              <a href="./services.html">Services</a>
+              <a href="./contact.html">Contact</a>
+              <a href="./joinus.html">Join Us</a>
+            </div>
+          </div>
+          <h1>Contact Us</h1>
+          <div id="container">
+            <h2>&bull; Keep in Touch &bull;</h2>
+            <div class="underline">
+            </div>
+            <div class="icon_wrapper">
+              
+            </div>
+            <form action="#" method="post" id="contact_form">
+              <div class="name">
+                <label for="name"></label>
+                <input type="text" placeholder="My name is" name="name" id="name_input" required>
+              </div>
+              <div class="email">
+                <label for="email"></label>
+                <input type="email" placeholder="My e-mail is" name="email" id="email_input" required >
+              </div>
+              <div class="telephone">
+                <label for="name"></label>
+                <input type="text" placeholder="My number is" name="telephone" id="telephone_input" required>
+              </div>
+              <div class="subject">
+                <label for="subject"></label>
+                <select placeholder="Subject line" name="subject" id="subject_input" required >
+                  <option disabled hidden selected>Subject line</option>
+                  <option style="color: white;background-color: rgba(0,202,244,1); opacity: 0.5;">I'd like to start a project</option>
+                  <option style="color: white;background-color: rgba(0,202,244,1); opacity: 0.5;">I'd like to ask a question</option>
+                  <option style="color: white;background-color: rgba(0,202,244,1);opacity: 0.5;">I'd like to make a proposal</option>
+                </select>
+              </div>
+              <div class="message">
+                <label for="message"></label>
+                <textarea name="message" placeholder="I'd like to chat about" id="message_input" cols="30" rows="5" required></textarea>
+              </div>
+              <div class="submit">
+               <a href="mailto:sarang.deo20@pccoepune.org" target="_blank"> <input type="submit" value="Send Message" id="form_button" /></a>
+              </div>
+            </form>
+          </div>
+          <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+          <script>
+            AOS.init();
+          </script>
+    </section>
+</body>
+</html>

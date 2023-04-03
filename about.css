@@ -1,0 +1,102 @@
+body{
+    background: rgb(31,1,92);
+    background: linear-gradient(90deg, rgba(31,1,92,1) 9%, rgba(84,0,111,1) 44%, rgba(0,202,244,1) 100%);
+    margin: 0px;
+    font-family: 'Rajdhani', sans-serif; 
+    overflow-x: hidden;
+    text-transform: uppercase;
+}
+
+.info{
+    display: flex;
+    direction: row;
+    flex-wrap: wrap;
+  }
+
+  .board{   
+    perspective: 100px;
+    /* padding-top: 50px; */
+    animation: zoom 1s;
+    display: flex;
+    justify-content: center;
+    width: auto;
+    width: 55%;
+    z-index: -1;
+  }
+
+  .boardImg{
+    height:530px;
+    width: 450px;
+    opacity:1;
+    /* transform: rotateY(-20deg); */
+    transform-style: preserve-3d;
+    box-shadow: 20px 5px 50px black;
+    transition: 0.3s;
+    animation: zoom 2s ease-in-out, float 6s infinite ease-in-out;
+    align-self: center;
+  }
+
+  @keyframes zoom {
+    0%{
+        scale:0;
+        transform:rotateY(-2deg);
+        opacity: 0;
+    } 
+    100%{
+        scale:1;
+        transform:rotateY(-2deg);
+        opacity: 1;
+    }
+  }
+
+  @keyframes float {
+    0% {
+      transform: translatey(5px) rotateY(-2deg);
+    }
+    50% {
+      transform: translatey(-25px) rotateY(-2deg);
+    }
+    100% {
+      transform: translatey(5px) rotateY(-2deg);
+    }
+  }
+
+
+  .information{
+    width: 40%;
+    margin-left: 5%;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .information h2{
+    font-size: 50px;
+    align-self: center;
+    text-align: center;
+    color: white;
+    /* padding-top: 50px; */
+    z-index: -1;
+  }
+
+  .information p{
+    font-size: 30px;
+    text-align: justify;
+    text-justify: inter-word;
+    color: white;
+    z-index: -1;
+  }
+
+  @media screen and (max-width:1130px) {
+    .information{
+        width: 90%;
+    }
+    .board{
+        width: 90%;
+    }
+
+    .boardImg{
+      height:60vh;
+      width: 90vw;
+    }
+  }
