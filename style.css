@@ -68,5 +68,12 @@
     }
   }
 
+  @media screen and (max-width:600px) {
+    .homepage{
+      background-image: url("./Images/mobilehome1.jpg");
+      object-fit: cover;
+    }
+  }
+
   
 
