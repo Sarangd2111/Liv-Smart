@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="./nav.css">
+  <link rel="stylesheet" href="./contact.css">
+  <link rel="stylesheet" href="./services.css">
+  <link rel="stylesheet" href="./about.css">
+  <link rel="stylesheet" href="./signup.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./Images/favicon-removebg-preview.png" style="height:60px;width:60px">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+  <title>LivSmart</title>
+</head>
+
+<body>
+  <section id="login">
+    <div class="nav" style="display: flex;" data-aos="zoom-in" data-aos-delay="1500">
+      <input type="checkbox" id="nav-check">
+      <div class="nav-header" style="width: 40%;">
+        <div class="nav-title" style="display: flex;">
+          <img src="./Images/favicon-removebg-preview.png" alt=""
+            style="width: 80px; height: 80px; transform: translateY(-25px);">
+          Liv-Smart
+        </div>
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+      <div class="nav-links" style="width: 60%;">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About Us</a>
+        <a href="./services.html">Services</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./joinus.html">Join Us</a>
+        <a href="./login.html"><img src="./Images/icons8-login-96dark.png" alt="Login" width="40px"
+            style="transform: translateY(-8px);"></a>
+      </div>
+    </div>
+    <h1>Login</h1>
+
+    <div id="container">
+      <h2>&bull; Login &bull;</h2>
+      <div class="underline"></div>
+      <form action="login.php" method="post">
+        <label for="username"></label>
+        <input type="text" id="username" name="username" required placeholder="Username">
+        <label for="passid"></label>
+        <input type="password" id="passid" name="password" required placeholder="Password">
+        <button type="submit" class="form_button" id="login" name="login">Login</button>
+        <div class="login_signup">
+          <a href="./signup.html" style="
+            color: white;
+            text-decoration: none;
+            padding-left: 10px; transition: 0.3s;">Wanna join us?...</a>
+        </div>
+      </form>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+
+    </script>
+  </section>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+body{
+    margin: 0px;
+    font-family: 'Rajdhani', sans-serif; 
+    overflow-x: hidden;
+    text-transform: uppercase;
+}
+
+
+.image{
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    animation: fadein 2.5s;
+    background-image: url(./Images/jooinus.jpg);
+}
+
+.contacts{
+    margin-top: 65vh;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    padding-left: 0;
+}
+ul li {
+    list-style: none;
+    margin: 0 20px;
+    cursor: pointer;
+
+}
+ul li a {
+    text-decoration: none;
+}
+
+ul li img{
+    opacity: 0.5;
+    transition: 0.3s;
+    z-index: 999;
+    padding: 5px;
+}
+
+ul li img:hover{
+    scale:1.05;
+    transition: 0.3s;
+    opacity: 1;
+}
+
+ul li img.instagram{
+    border-top: 4px solid #dc2743;
+    border-radius: 10%;
+}
+
+ul li img.instagram:hover{
+    border-bottom: 4px solid #dc2743 ;
+    border-top: none;
+    border-radius: 10%;
+}
+
+ul li img.whatsapp{
+    border-top: 4px solid #25D366;
+    border-radius: 10%;
+}
+
+ul li img.whatsapp:hover{
+    border-bottom: 4px solid #25D366 ;
+    border-top: none;
+    border-radius: 10%;
+}
+
+ul li img.twitter{
+    border-top: 4px solid #1DA1F2;
+    border-radius: 10%;
+}
+
+ul li img.twitter:hover{
+    border-bottom: 4px solid #1DA1F2 ;
+    border-top: none;
+    border-radius: 10%;
+}
+
+ul li img.gmail{
+    border-top: 4px solid white;
+    border-radius: 10%;
+}
+
+ul li img.gmail:hover{
+    border-bottom: 4px solid white ;
+    border-top: none;
+    border-radius: 10%;
+}
+
+
+
+

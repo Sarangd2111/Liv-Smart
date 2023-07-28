@@ -1,0 +1,51 @@
+
+  body{
+    color: white;
+  }
+
+  .form_button {
+    background: none;
+    border: solid 2px white;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.875em;
+    font-weight: bold;
+    outline: none;
+    padding: 20px 35px;
+    text-transform: uppercase;
+    transition: 0.3s;
+  
+  }
+  
+  .form_button:hover {
+    background: white;
+    color: #0a7aa0;
+    scale: 1.1;
+    box-shadow: 5px 5px 50px black, 2px 2px 30px inset #0a7aa0  ;
+    border-color: #0a7aa0;
+  }
+
+.nav{
+  opacity: 1;
+}
+
+.login_signup{
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  transition: 0.3s;
+}
+
+.login_signup a{
+  color: white;
+  text-decoration: none;
+  padding-left: 10px;
+}
+
+.login_signup a:hover{
+  scale: 1.1;
+  transition: 0.3s;
+}
+
+
