@@ -6,15 +6,23 @@ An integrated web interface for the residents of a smart building and infrastruc
 
 # Tech Stack
 HTML
+
 CSS
+
 PHP
+
 XAMPP(MySQL)
 
 # Features
 Building services introduction
+
 About the building group
+
 Services provided
+
 Contact page
+
 Loginn/signup service
+
 Chat forum
 
